@@ -118,11 +118,14 @@ label start:
 
     e "Уже поздно, так что я пойду спать"
 
+
+
     "{i}стрим завершился{/i}"
 
 
     scene bg lightson
-    with Dissolve(.5)
+    with pixellate
+    #with Dissolve(.5)
 
     scene bg lightson lightning
     with hpunch
