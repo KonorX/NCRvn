@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## Для отделения абзацев оставляйте между ними пустую строку.
 
 define gui.about = _p("""
+SFX sounds by freesfx.co.uk
 """)
 
 

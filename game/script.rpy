@@ -17,9 +17,11 @@ image stream  ="n1.png"
 
 # Игра начинается здесь:
 label start:
-
+    play music "audio/rain.mp3" fadeout 1
+    #queue music "audio/rain.mp3"
+    #queue music "audio/rain.mp3"
     scene bg black
-
+    $ flash = Fade(.25, 0, .75, color="#fff")
     scene bg lightsoff
     with Dissolve(1.5)
 
@@ -27,7 +29,7 @@ label start:
     pause .5
     scene bg lightsoff lightning
     with hpunch
-
+    play sound "audio/thunder.mp3"
     mc "!"
     mc "М, ой а я заснул оказывается"
     mc "Хорошо что меня хоть молния разбудила"
@@ -52,6 +54,7 @@ label start:
         "bg lightson"with dissolve
         pause 1.0
         repeat 2
+    play sound "audio/thunder.mp3"
     mc " Я зашел на твич в поиске компаньонов для игры, Spray228 его смотрело больше 10к зрителей - нет подумал я. Дальше был BEMBI - тоже нет. "
 
 
@@ -106,8 +109,8 @@ label start:
 
     e "Через ... {p=0.5} триста лет"
 
-    myself "Я вдруг вспомнил свою подругу, которой приснился сон про апокалипсис"
-    myself "Oна постоянно повторяет, что это такое было, а потом не помнит, о чем было и с ужасом думает, что ей теперь делать?"
+    mcnvl "Я вдруг вспомнил свою подругу, которой приснился сон про апокалипсис"
+    mcnvl "Oна постоянно повторяет, что это такое было, а потом не помнит, о чем было и с ужасом думает, что ей теперь делать?"
 
     nvl clear
     nvl hide dissolve
@@ -126,7 +129,7 @@ label start:
     scene bg lightson
     with pixellate
     #with Dissolve(.5)
-
+    play sound "audio/thunder.mp3"
     scene bg lightson lightning
     with hpunch
     pause 0.5
@@ -135,7 +138,7 @@ label start:
     with Dissolve(.5)
 
     scene bg black
-
+    stop music fadeout 1
     mcnvl "Я выключил компьютер.{w} Пока на улице был хоть какой-то свет, я пялился в потолок."
     mcnvl "Я не хотел спать потому что знал что за этим последует."
 
