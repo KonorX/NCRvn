@@ -358,8 +358,13 @@ screen main_menu():
     ## заменять этот.
     tag menu
 
-    add gui.main_menu_background
+        #add gui.main_menu_background
 
+    window:
+        xalign 0.0 yalign 0.0
+        #xpadding 0
+        #ypadding 0
+        add "animatedMainMenu"
     ## Эта пустая рамка затеняет главное меню.
     frame:
         style "main_menu_frame"
@@ -580,7 +585,7 @@ style about_label_text:
 ## как они почти одинаковые, оба реализованы по правилам третьего экрана —
 ## file_slots.
 ##
-## https://www.renpy.org/doc/html/screen_special.html#save 
+## https://www.renpy.org/doc/html/screen_special.html#save
 
 screen save():
 
