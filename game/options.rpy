@@ -18,12 +18,12 @@ define config.name = _("NCRvn")
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
 ## Установите на False, чтобы спрятать заголовок.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Версия игры.
 
-define config.version = "1.0"
+define config.version = "1.1"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
