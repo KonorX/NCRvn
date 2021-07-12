@@ -1,4 +1,7 @@
 
+image brain_good=" bg secondnight good"
+image brain_bad="bg secondnight bad"
+image bg_brain="bg secondnight"
 
 label SecondDay:
 
@@ -7,7 +10,9 @@ label SecondDay:
     mcnvl '''проснувшись я вспомнилчто видел ещё один её сон
 
     То что я увидел в её сне повергло меня в ужас.
-
+    '''
+    scene bg_brain with dissolve
+    '''
     А меня шокировать не так-то просто, так как я видел уже многое.
 
     Но Надя прямо-таки слетела с катушек, и я увидел именно то что мне было нужно.
@@ -18,6 +23,12 @@ label SecondDay:
 
     Они обманули меня, то есть не обманули, а просто одурачили.
 
+    '''
+    if is_scaredIn1night:
+        scene brain_bad
+    else:
+        scene brain_good
+    '''
     Я понял что должен действовать с осторожностью {p}  и вот как раз ее я и стал изучать, слегка воздействуя на её ум и разум.
 
     Еще одни путешественники по снам?

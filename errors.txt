@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 52: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    play sound "audio/thunder.mp3"
-               ^
+File "game/secondDayScript.rpy", line 28: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    scene brain_bad
+    ^
+
+File "game/secondDayScript.rpy", line 29: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Tue Jul  6 01:35:09 2021
+Mon Jul 12 13:17:18 2021
